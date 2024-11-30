@@ -1,0 +1,12 @@
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryVariant">#CCCCCC</color>
+    <color name="colorSecondary">#000000</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorSecondary">#AAAAAA</color>
+    <color name="backgroundColor">#000000</color>
+    <color name="backgroundColorVariant">#121212</color>
+    <color name="buttonColor">#FFFFFF</color>
+    <color name="buttonTextColor">#000000</color>
+    <color name="dividerColor">#333333</color>
+</resources>
