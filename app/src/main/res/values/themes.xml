@@ -1,12 +1,9 @@
-<resources>
-    <style name="Theme.PaperClothes" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
-        <item name="colorSecondary">@color/colorSecondary</item>
-        <item name="android:windowBackground">@color/backgroundColor</item>
-        <item name="android:textColor">@color/textColorPrimary</item>
-        <item name="android:textColorHint">@color/textColorSecondary</item>
-        <item name="colorButtonNormal">@color/buttonColor</item>
-        <item name="android:colorAccent">@color/buttonColor</item>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Practice16" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
+
+    <style name="Theme.Practice16" parent="Base.Theme.Practice16" />
 </resources>

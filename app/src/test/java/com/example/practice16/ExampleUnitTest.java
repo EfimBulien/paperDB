@@ -1,4 +1,4 @@
-package com.example.paperclothes;
+package com.example.practice16;
 
 import org.junit.Test;
 

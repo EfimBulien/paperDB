@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.paperclothes'
+    namespace 'com.example.practice16'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.paperclothes"
+        applicationId "com.example.practice16"
         minSdk 29
         targetSdk 34
         versionCode 1
@@ -26,18 +26,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    dependenciesInfo {
-        includeInApk true
-        includeInBundle true
-    }
-    buildToolsVersion '35.0.0'
 }
 
 dependencies {
     implementation 'io.github.pilgr:paperdb:2.7.2'
-    implementation 'com.squareup.picasso:picasso:2.8'
-    implementation 'com.google.code.gson:gson:2.10'
-    implementation 'commons-io:commons-io:2.11.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
     implementation libs.appcompat
     implementation libs.material
     implementation libs.activity
