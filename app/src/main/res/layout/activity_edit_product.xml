@@ -1,4 +1,6 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -9,14 +11,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Название"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/descriptionEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Описание"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/priceEditText"
@@ -24,7 +28,8 @@
         android:layout_height="wrap_content"
         android:hint="Цена"
         android:inputType="numberDecimal"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/sizeEditText"
@@ -32,14 +37,16 @@
         android:layout_height="wrap_content"
         android:hint="Размер"
         android:inputType="numberDecimal"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/colorEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Цвет"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/quantityEditText"
@@ -47,7 +54,8 @@
         android:layout_height="wrap_content"
         android:hint="Количество"
         android:inputType="number"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/productImageView"
@@ -62,10 +70,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Обновить товар"
-        android:onClick="updateProduct"
-        android:layout_margin="16dp"
-        android:background="@drawable/rounded_button"
-        android:textColor="@color/textColorPrimary"/>
+        android:onClick="saveProduct"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/deleteProductButton"
@@ -73,7 +79,5 @@
         android:layout_height="wrap_content"
         android:text="Удалить товар"
         android:onClick="deleteProduct"
-        android:layout_margin="16dp"
-        android:background="@drawable/rounded_button"
-        android:textColor="@color/textColorPrimary"/>
+        tools:ignore="HardcodedText" />
 </LinearLayout>

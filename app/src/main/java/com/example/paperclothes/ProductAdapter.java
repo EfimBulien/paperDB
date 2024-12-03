@@ -53,7 +53,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
             itemView.setOnClickListener(v -> listener.onProductClick(getAdapterPosition()));
         }
 
-        public void bind(Product product) {
+        public void bind(@NonNull Product product) {
             nameTextView.setText(product.getName());
         }
     }

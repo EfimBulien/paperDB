@@ -22,7 +22,7 @@ public class CreateProductActivity extends AppCompatActivity {
     private EditText sizeEditText, colorEditText, quantityEditText;
     private Uri imageUri;
 
-    private ActivityResultLauncher<Intent> imagePickerLauncher = registerForActivityResult(
+    private final ActivityResultLauncher<Intent> imagePickerLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             result -> {
                 if (result.getResultCode() == RESULT_OK) {
@@ -32,8 +32,7 @@ public class CreateProductActivity extends AppCompatActivity {
                         if (imageUri != null) {
                             Picasso.get().load(imageUri).into(productImageView);
                             String fileName = getFileName(imageUri);
-                            Toast.makeText(CreateProductActivity.this,
-                                    "Выбрано: " + fileName, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(CreateProductActivity.this, "Выбрано: " + fileName, Toast.LENGTH_SHORT).show();
                         }
                     }
                 }
@@ -77,6 +76,7 @@ public class CreateProductActivity extends AppCompatActivity {
         if (uri == null) {
             return null;
         }
+
         if (Objects.equals(uri.getScheme(), "content")) {
             Cursor cursor = getContentResolver().query(uri, null, null,
                     null, null);
